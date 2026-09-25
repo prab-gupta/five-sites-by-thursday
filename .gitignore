@@ -1,0 +1,7 @@
+.env
+*.rtf
+.DS_Store
+__pycache__/
+.vercel/
+scratch.db
+.claude/
