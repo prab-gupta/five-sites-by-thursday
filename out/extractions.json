@@ -1,0 +1,791 @@
+{
+  "S-001": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-002": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Neighbours we spoke to were indifferent.",
+      "value": "neutral"
+    }
+  },
+  "S-003": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Owner is asking for a 12% revenue share as a commercial term.",
+        "quote": "Wants 12% revenue share."
+      }
+    ],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council planning committee minutes record support for local storage on this plot.",
+      "value": "supportive"
+    }
+  },
+  "S-004": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Neighbours we spoke to were indifferent.",
+      "value": "neutral"
+    }
+  },
+  "S-005": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-006": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council planning committee minutes record support for local storage on this plot.",
+      "value": "supportive"
+    }
+  },
+  "S-007": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+      "value": "supportive"
+    }
+  },
+  "S-008": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-009": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "The protected-area overlap with Esker Meadows reserve still has to be verified before the project proceeds.",
+        "quote": "Needs checking before we go further."
+      }
+    ],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "Municipal ecologist says the northern third of the plot falls inside the Esker Meadows reserve designated in 2024.",
+      "value": "protected"
+    },
+    "sentiment": {
+      "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+      "value": "supportive"
+    }
+  },
+  "S-010": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Council's position hinges on a noise report that has not yet been delivered.",
+        "quote": "officer said 'depends on the noise report'"
+      }
+    ],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+      "value": "neutral"
+    }
+  },
+  "S-011": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-012": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-013": {
+    "area_m2": {
+      "quote": "roughly 700 m\u00b2 remains",
+      "value": 700
+    },
+    "caveats": [
+      {
+        "detail": "Part of the original plot (the southern half) was sold off for housing last year, so only the remaining portion is available.",
+        "quote": "Southern half was sold for housing last year; roughly 700 m\u00b2 remains."
+      }
+    ],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council planning committee minutes record support for local storage on this plot.",
+      "value": "supportive"
+    }
+  },
+  "S-014": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+      "value": "supportive"
+    }
+  },
+  "S-015": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-016": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Council's position is contingent on a noise report that has not yet been decided.",
+        "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
+      }
+    ],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+      "value": "neutral"
+    }
+  },
+  "S-017/S-031": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "The site is referred to by an alternate name, 'Brekke depot', so it may already be logged elsewhere under that name.",
+        "quote": "(Brekke depot, finally.)"
+      },
+      {
+        "detail": "Heads of terms were sent after the first owner call in July; commercial terms were still being drafted before the LOI.",
+        "quote": "Good first call with the owner, sending heads of terms."
+      }
+    ],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent. (Brekke depot, finally.)",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Neighbours we spoke to were indifferent.",
+      "value": "neutral"
+    }
+  },
+  "S-018": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council planning committee minutes record support for local storage on this plot.",
+      "value": "supportive"
+    }
+  },
+  "S-019": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-020": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "The owner's board formally voted against the lease, so the refusal is a decision at board level rather than an individual's view.",
+        "quote": "Board voted against."
+      },
+      {
+        "detail": "Timing: the site could be reconsidered in 2027.",
+        "quote": "Revisit in 2027."
+      }
+    ],
+    "owner_status": {
+      "quote": "Owner declined to lease.",
+      "value": "refused"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-021": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Council's position is contingent on a pending noise report.",
+        "quote": "officer said 'depends on the noise report'"
+      }
+    ],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+      "value": "neutral"
+    }
+  },
+  "S-022": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-023": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner not contacted yet.",
+      "value": "not_contacted"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-025": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-026": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council planning committee minutes record support for local storage on this plot.",
+      "value": "supportive"
+    }
+  },
+  "S-027": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Council's position is contingent on a noise report that has not yet been delivered.",
+        "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
+      }
+    ],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+      "value": "neutral"
+    }
+  },
+  "S-028": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner signed the letter of intent.",
+      "value": "loi_signed"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Local energy co-op wrote to the council backing the project.",
+      "value": "supportive"
+    }
+  },
+  "S-029": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+      "value": "supportive"
+    }
+  },
+  "S-030": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Site is adjacent to a school, which is driving local objection.",
+        "quote": "Residents' association has started a petition against 'industrial batteries' next to the school."
+      },
+      {
+        "detail": "Heads of terms were only just being sent as of 22 Aug 2026; commercial terms not yet agreed.",
+        "quote": "Good first call with the owner, sending heads of terms."
+      }
+    ],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Residents' association has started a petition against 'industrial batteries' next to the school.",
+      "value": "opposed"
+    }
+  },
+  "S-032": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-033": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-034": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Neighbours we spoke to were indifferent.",
+      "value": "neutral"
+    }
+  },
+  "S-035": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner not contacted yet.",
+      "value": "not_contacted"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Neighbours we spoke to were indifferent.",
+      "value": "neutral"
+    }
+  },
+  "S-036": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [
+      {
+        "detail": "Site appears disused and large, but ownership is entirely unidentified so far; assessment is only a drive-by observation.",
+        "quote": "Drove past. Yard looks disused and big. No idea who owns it."
+      }
+    ],
+    "owner_status": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-037": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+      "value": "supportive"
+    }
+  },
+  "S-038": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-039": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Owner not contacted yet.",
+      "value": "not_contacted"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "",
+      "value": "unknown"
+    }
+  },
+  "S-040": {
+    "area_m2": {
+      "quote": "",
+      "value": null
+    },
+    "caveats": [],
+    "owner_status": {
+      "quote": "Good first call with the owner, sending heads of terms.",
+      "value": "in_talks"
+    },
+    "protected_area": {
+      "quote": "",
+      "value": "unknown"
+    },
+    "sentiment": {
+      "quote": "Councillor raised fire-safety objections at last month's meeting; expect a fight.",
+      "value": "opposed"
+    }
+  }
+}

@@ -1,0 +1,2322 @@
+{
+  "ranked": [
+    {
+      "site_id": "S-003",
+      "name": "Kessby Old Quarry Yard",
+      "region": "Aldmark",
+      "score": 97.0,
+      "best_case": 97.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.6,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.8,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent. Wants 12% revenue share.",
+          "note": "2026-08-19",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Council planning committee minutes record support for local storage on this plot.",
+          "note": "2026-09-03"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-09-12"
+        },
+        "C6": {
+          "value": 2100,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-09-12"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Owner is asking for a 12% revenue share as a commercial term.",
+          "quote": "Wants 12% revenue share."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-018",
+      "name": "Grelle Harbour Plot",
+      "region": "Nordholm",
+      "score": 97.0,
+      "best_case": 97.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.6,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.8,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-08-10",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Council planning committee minutes record support for local storage on this plot.",
+          "note": "2026-08-12"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1700,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-017/S-031",
+      "name": "Brekke Depot",
+      "region": "Sveld",
+      "score": 96.0,
+      "best_case": 96.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.7,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.9,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent. (Brekke depot, finally.)",
+          "note": "2026-09-08",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Neighbours we spoke to were indifferent.",
+          "note": "2026-07-02"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1800,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "logged twice (S-017, S-031), merged"
+      ],
+      "caveats": [
+        {
+          "detail": "The site is referred to by an alternate name, 'Brekke depot', so it may already be logged elsewhere under that name.",
+          "quote": "(Brekke depot, finally.)"
+        },
+        {
+          "detail": "Heads of terms were sent after the first owner call in July; commercial terms were still being drafted before the LOI.",
+          "quote": "Good first call with the owner, sending heads of terms."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-027",
+      "name": "Varne Farm Edge",
+      "region": "Tarrow",
+      "score": 93.0,
+      "best_case": 93.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 5.5,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.5,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-07-30",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+          "note": "2026-08-21"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1400,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Council's position is contingent on a noise report that has not yet been delivered.",
+          "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-014",
+      "name": "Orlund Depot Yard",
+      "region": "Sveld",
+      "score": 86.0,
+      "best_case": 86.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.1,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.4,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-11",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+          "note": "2026-08-02"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1600,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-013",
+      "name": "Rook Street Plot",
+      "region": "Aldmark",
+      "score": 82.0,
+      "best_case": 82.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.3,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.9,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Southern half was sold for housing last year; roughly 700 m\u00b2 remains. Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-28",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Council planning committee minutes record support for local storage on this plot.",
+          "note": "2026-08-28"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2017-02-11"
+        },
+        "C6": {
+          "value": 700,
+          "tier": 0,
+          "source": "note",
+          "quote": "roughly 700 m\u00b2 remains",
+          "note": "note 2026-08-28 overrides registry 2400 m\u00b2 (2017-02-11)"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Part of the original plot (the southern half) was sold off for housing last year, so only the remaining portion is available.",
+          "quote": "Southern half was sold for housing last year; roughly 700 m\u00b2 remains."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-032",
+      "name": "Ashcombe Field Corner",
+      "region": "Tarrow",
+      "score": 82.0,
+      "best_case": 92.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 4.5,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.0,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-02",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-006",
+      "name": "Ulven Works Site",
+      "region": "Nordholm",
+      "score": 76.0,
+      "best_case": 76.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 1.7,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.6,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-08-16",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Council planning committee minutes record support for local storage on this plot.",
+          "note": "2026-08-17"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 2300,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-007",
+      "name": "Tallow Cross Brownfield",
+      "region": "Aldmark",
+      "score": 76.0,
+      "best_case": 76.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 1.6,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.7,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-08-22",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+          "note": "2026-08-22"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 2000,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-020",
+      "name": "Brannoch Depot",
+      "region": "Sveld",
+      "score": 74.0,
+      "best_case": 74.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.2,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.1,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "refused",
+          "tier": 0,
+          "source": "typed-field",
+          "quote": "Owner declined to lease. Board voted against. Revisit in 2027.",
+          "note": "2026-09-05",
+          "claude": "refused"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-07-21"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "The owner's board formally voted against the lease, so the refusal is a decision at board level rather than an individual's view.",
+          "quote": "Board voted against."
+        },
+        {
+          "detail": "Timing: the site could be reconsidered in 2027.",
+          "quote": "Revisit in 2027."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-011",
+      "name": "Hollin Road Brownfield",
+      "region": "Aldmark",
+      "score": 73.0,
+      "best_case": 88.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 2.88,
+          "tier": 3,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 4.8 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-09-09",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-08-14"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1900,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-001",
+      "name": "Brisk Lane Yard",
+      "region": "Aldmark",
+      "score": 68.0,
+      "best_case": 68.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 2.3,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 4.1,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-17",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-08-26"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1300,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-037",
+      "name": "Merrow Depot",
+      "region": "Tarrow",
+      "score": 68.0,
+      "best_case": 68.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 3.7,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 2.8,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-07-14",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+          "note": "2026-08-23"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 900,
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-002",
+      "name": "Farrow Bridge Yard",
+      "region": "Nordholm",
+      "score": 67.0,
+      "best_case": 67.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 2.2,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.3,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-12",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Neighbours we spoke to were indifferent.",
+          "note": "2026-08-13"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-016",
+      "name": "Glaze Farm Edge",
+      "region": "Tarrow",
+      "score": 67.0,
+      "best_case": 67.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 3.5,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 2.3,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-02",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+          "note": "2026-08-19"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Council's position is contingent on a noise report that has not yet been decided.",
+          "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-021",
+      "name": "Selby Quay Yard",
+      "region": "Sveld",
+      "score": 67.0,
+      "best_case": 67.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 2.4,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.8,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-30",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+          "note": "2026-08-30"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1700,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Council's position is contingent on a pending noise report.",
+          "quote": "officer said 'depends on the noise report'"
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-004",
+      "name": "Cotter Hill Land",
+      "region": "Sveld",
+      "score": 66.0,
+      "best_case": 81.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 2.04,
+          "tier": 3,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 3.4 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-09-09",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Neighbours we spoke to were indifferent.",
+          "note": "2026-08-08"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1800,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-028",
+      "name": "Jessop Common",
+      "region": "Tarrow",
+      "score": 64.0,
+      "best_case": 64.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 1.9,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 2.3,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-07-18",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-08-27"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1100,
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-030",
+      "name": "Tofte Industrial Estate",
+      "region": "Nordholm",
+      "score": 64.0,
+      "best_case": 64.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 2.9,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.1,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-22",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "opposed",
+          "tier": 0,
+          "source": "note",
+          "quote": "Residents' association has started a petition against 'industrial batteries' next to the school.",
+          "note": "2026-08-24"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1350,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Site is adjacent to a school, which is driving local objection.",
+          "quote": "Residents' association has started a petition against 'industrial batteries' next to the school."
+        },
+        {
+          "detail": "Heads of terms were only just being sent as of 22 Aug 2026; commercial terms not yet agreed.",
+          "quote": "Good first call with the owner, sending heads of terms."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-010",
+      "name": "Eller Road Plot",
+      "region": "Aldmark",
+      "score": 63.0,
+      "best_case": 63.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 3.9,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 2.4,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-07-17",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
+          "note": "2026-08-23"
+        },
+        "C5": {
+          "value": "high",
+          "tier": 0,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1800,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Council's position hinges on a noise report that has not yet been delivered.",
+          "quote": "officer said 'depends on the noise report'"
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-026",
+      "name": "Dunmere Council Plot",
+      "region": "Tarrow",
+      "score": 62.0,
+      "best_case": 77.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 2.58,
+          "tier": 3,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 4.3 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-28",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Council planning committee minutes record support for local storage on this plot.",
+          "note": "2026-09-01"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1300,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-034",
+      "name": "Vinstra Old Dairy",
+      "region": "Nordholm",
+      "score": 61.0,
+      "best_case": 61.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 5.1,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 4.2,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-26",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Neighbours we spoke to were indifferent.",
+          "note": "2026-08-11"
+        },
+        "C5": {
+          "value": "medium",
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1100,
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-005",
+      "name": "Dalby Works",
+      "region": "Tarrow",
+      "score": 61.0,
+      "best_case": 71.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 2.6,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 2.0,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-19",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1800,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-025",
+      "name": "Ingle Street Yard",
+      "region": "Sveld",
+      "score": 59.0,
+      "best_case": 59.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 2.0,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 1.7,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-04",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-08-07"
+        },
+        "C5": {
+          "value": "medium",
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 900,
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-008",
+      "name": "Kilnbury Common Edge",
+      "region": "Aldmark",
+      "score": 55.0,
+      "best_case": 55.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": null,
+          "tier": 0,
+          "source": "gridmap",
+          "quote": null,
+          "note": "no substation within search radius (10 km)"
+        },
+        "C2": {
+          "value": null,
+          "tier": 0,
+          "source": "gridmap",
+          "quote": null,
+          "note": "no substation within search radius (10 km)"
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent.",
+          "note": "2026-08-11",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-08-11"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 3000,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-022",
+      "name": "Harl Quarry",
+      "region": "Aldmark",
+      "score": 52.0,
+      "best_case": 77.0,
+      "known": 4,
+      "criteria": {
+        "C1": {
+          "value": 2.46,
+          "tier": 3,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 4.1 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-17",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-038",
+      "name": "Nab End Plot",
+      "region": "Aldmark",
+      "score": 52.0,
+      "best_case": 77.0,
+      "known": 4,
+      "criteria": {
+        "C1": {
+          "value": 2.34,
+          "tier": 3,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 3.9 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-20",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-015",
+      "name": "Fenwick Depot",
+      "region": "Sveld",
+      "score": 50.0,
+      "best_case": 65.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 1.2,
+          "tier": 1,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 2.0 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-09-09",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Local energy co-op wrote to the council backing the project.",
+          "note": "2026-08-16"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-024",
+      "name": "Pellick Lane Plot",
+      "region": "Sveld",
+      "score": 45.0,
+      "best_case": 100.0,
+      "known": 2,
+      "criteria": {
+        "C1": {
+          "value": 5.0,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.6,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no owner status in notes",
+          "claude": null
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "parcel not in land registry"
+        },
+        "C6": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "parcel not in land registry"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-036",
+      "name": "Gorse Hill Yard",
+      "region": "Tarrow",
+      "score": 45.0,
+      "best_case": 100.0,
+      "known": 2,
+      "criteria": {
+        "C1": {
+          "value": 4.4,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.9,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no owner status in notes",
+          "claude": null
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "parcel not in land registry"
+        },
+        "C6": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "parcel not in land registry"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "Site appears disused and large, but ownership is entirely unidentified so far; assessment is only a drive-by observation.",
+          "quote": "Drove past. Yard looks disused and big. No idea who owns it."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-040",
+      "name": "Otterley Works",
+      "region": "Sveld",
+      "score": 43.0,
+      "best_case": 43.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 1.9,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 3.4,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-07-08",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "opposed",
+          "tier": 0,
+          "source": "note",
+          "quote": "Councillor raised fire-safety objections at last month's meeting; expect a fight.",
+          "note": "2026-08-27"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-012",
+      "name": "Nesby Rail Sidings",
+      "region": "Nordholm",
+      "score": 43.0,
+      "best_case": 53.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 1.8,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 2.2,
+          "tier": 3,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-22",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "medium",
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1900,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-039",
+      "name": "Oddan Car Park",
+      "region": "Nordholm",
+      "score": 41.0,
+      "best_case": 51.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 1.3,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.9,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "not_contacted",
+          "tier": 1,
+          "source": "typed-field",
+          "quote": "Owner not contacted yet.",
+          "note": "2026-08-13",
+          "claude": "not_contacted"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 900,
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-019",
+      "name": "Moss End Farm",
+      "region": "Sveld",
+      "score": 34.0,
+      "best_case": 44.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": null,
+          "tier": 0,
+          "source": "gridmap",
+          "quote": null,
+          "note": "no substation within search radius (10 km)"
+        },
+        "C2": {
+          "value": null,
+          "tier": 0,
+          "source": "gridmap",
+          "quote": null,
+          "note": "no substation within search radius (10 km)"
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-19",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "low",
+          "tier": 4,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 2200,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-023",
+      "name": "Hask Common",
+      "region": "Nordholm",
+      "score": 32.0,
+      "best_case": 42.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 0.95,
+          "tier": 0,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 3.4,
+          "tier": 1,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "not_contacted",
+          "tier": 1,
+          "source": "typed-field",
+          "quote": "Owner not contacted yet.",
+          "note": "2026-08-15",
+          "claude": "not_contacted"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 2600,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-029",
+      "name": "Kirkby Sidings",
+      "region": "Aldmark",
+      "score": 26.0,
+      "best_case": 41.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 0.84,
+          "tier": 0,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 1.4 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-11",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+          "note": "2026-08-01"
+        },
+        "C5": {
+          "value": "high",
+          "tier": 0,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 900,
+          "tier": 2,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-035",
+      "name": "Lorn Field",
+      "region": "Sveld",
+      "score": 26.0,
+      "best_case": 41.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 1.8,
+          "tier": 1,
+          "source": "vendor-lowband",
+          "quote": null,
+          "note": "unverified: vendor estimate 3.0 MW \u00b140%, scored at low end"
+        },
+        "C2": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "gridmap fetch failed: upstream timeout"
+        },
+        "C3": {
+          "value": "not_contacted",
+          "tier": 1,
+          "source": "typed-field",
+          "quote": "Owner not contacted yet.",
+          "note": "2026-08-16",
+          "claude": "not_contacted"
+        },
+        "C4": {
+          "value": "neutral",
+          "tier": 3,
+          "source": "note",
+          "quote": "Neighbours we spoke to were indifferent.",
+          "note": "2026-08-28"
+        },
+        "C5": {
+          "value": "high",
+          "tier": 0,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 1500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": null,
+      "flags": [
+        "headroom unverified (vendor estimate)"
+      ],
+      "caveats": [],
+      "rejected_quotes": []
+    }
+  ],
+  "excluded": [
+    {
+      "site_id": "S-009",
+      "name": "Esk Mill Land",
+      "region": "Aldmark",
+      "score": 100.0,
+      "best_case": 100.0,
+      "known": 6,
+      "criteria": {
+        "C1": {
+          "value": 4.9,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.7,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "loi_signed",
+          "tier": 5,
+          "source": "typed-field",
+          "quote": "Owner signed the letter of intent. Owner very keen.",
+          "note": "2026-07-14",
+          "claude": "loi_signed"
+        },
+        "C4": {
+          "value": "supportive",
+          "tier": 5,
+          "source": "note",
+          "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+          "note": "2026-08-05"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2018-04-20"
+        },
+        "C6": {
+          "value": 2600,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2018-04-20"
+        }
+      },
+      "kill": {
+        "source": "note",
+        "quote": "Municipal ecologist says the northern third of the plot falls inside the Esker Meadows reserve designated in 2024.",
+        "note": "field note says protected area; needs checking"
+      },
+      "flags": [],
+      "caveats": [
+        {
+          "detail": "The protected-area overlap with Esker Meadows reserve still has to be verified before the project proceeds.",
+          "quote": "Needs checking before we go further."
+        }
+      ],
+      "rejected_quotes": []
+    },
+    {
+      "site_id": "S-033",
+      "name": "Heron Marsh Plot",
+      "region": "Tarrow",
+      "score": 82.0,
+      "best_case": 92.0,
+      "known": 5,
+      "criteria": {
+        "C1": {
+          "value": 4.8,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C2": {
+          "value": 0.6,
+          "tier": 5,
+          "source": "gridmap",
+          "quote": null,
+          "note": null
+        },
+        "C3": {
+          "value": "in_talks",
+          "tier": 3,
+          "source": "typed-field",
+          "quote": "Good first call with the owner, sending heads of terms.",
+          "note": "2026-08-01",
+          "claude": "in_talks"
+        },
+        "C4": {
+          "value": null,
+          "tier": null,
+          "source": "unknown",
+          "quote": null,
+          "note": "no council/community note"
+        },
+        "C5": {
+          "value": "none",
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        },
+        "C6": {
+          "value": 2500,
+          "tier": 5,
+          "source": "landreg",
+          "quote": null,
+          "note": "2025-11-03"
+        }
+      },
+      "kill": {
+        "source": "registry",
+        "quote": null,
+        "note": "land registry: protected nature area"
+      },
+      "flags": [],
+      "caveats": [],
+      "rejected_quotes": []
+    }
+  ]
+}
