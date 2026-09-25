@@ -41,7 +41,7 @@ The rubric needs C3 (landowner), C4 (council/community sentiment) and C6 (area),
 ### Requirements
 
 - R1. One Claude call per site. Input: all of that site's notes with date, author and structured status. Output: JSON matching a fixed schema.
-- R2. Every signal is `{value, quote, note_date}`. If the notes are silent, it's `value: "unknown"` with `quote: null`. Never guessed.
+- R2. Every signal is `{value, quote}`. If the notes are silent, it's `value: "unknown"` with `quote: null`. Never guessed.
 - R3. Code rejects any signal whose quote is not a verbatim substring of one of that site's notes. The signal becomes `unknown` and the rejection is logged.
 - R4. Code, not the model, picks the latest-dated note per signal and maps values to tiers.
 - R5. Extraction is checked against hand labels, and the result is reported in `EVAL.md`.
@@ -64,7 +64,7 @@ The rubric needs C3 (landowner), C4 (council/community sentiment) and C6 (area),
 - **KTD3. Kill rule if the registry *or* a note says protected.** (session-settled: user-directed, chosen over registry only.) S-009 is excluded, shown with its quote and labelled "needs checking". Code sets `source: note` for a kill that comes from a note and `source: registry` for one from landreg, so the page can tell a confirmed kill from a hedged one.
 - **KTD4. The structured `owner_status` is authoritative for C3; Claude's owner value is a cross-check.** The field is typed by the team at the moment of the event, while text needs interpretation. Code stores both values side by side: `owner_status_field` (from the typed field, used for C3) and `owner_status_claude` (from the text), each one of the 5 statuses. When they differ, the page shows "check" with both values visible. This keeps C3 deterministic and turns the model into a verifier for it.
 - **KTD5. One call per site, not per note.** It matches the brief ("per site or per batch") and gives the model the context of neighbouring notes (the S-013 note carries both an owner status and an area fact). The cost is trivial (39 calls).
-- **KTD6. Notes are sent sorted by date, and the model returns `note_date` per signal.** Code still re-picks the latest itself (R4), so a model mistake in ordering can't flip S-020.
+- **KTD6. The model returns only value + quote. Code finds the note that contains the quote and takes the date from that note.** The model never handles dates, so a date mistake can't flip S-020.
 - **KTD7. Area override applies only when the note is newer than the landreg `record_date`.** Then the note wins for C6. S-013: note 2026-08-28 vs record 2017, so area = 700 m² and C6 = 0.
 - **KTD8. Structured output via a forced tool call with a JSON schema.** Enums include `unknown`. `claude-opus-5` by default, with a `MODEL` env override.
 - **KTD9. The check uses gold labels per distinct note text, expanded to every site.** There are only 18 distinct texts, so labelling those by hand gives a gold answer for **all 39 sites with notes**. That's a full check, not a sample, for about 15 minutes of labelling.
@@ -72,11 +72,11 @@ The rubric needs C3 (landowner), C4 (council/community sentiment) and C6 (area),
 ### Signal schema (directional)
 
 ```
-owner_status:      loi_signed | in_talks | not_contacted | refused | unknown   + quote, note_date
-sentiment:         supportive | neutral | opposed | unknown                      + quote, note_date
-area_override_m2:  number | unknown                                               + quote, note_date
-protected_area:    true | unknown                                                 + quote, note_date, source: registry | note
-caveats[]:         {kind: commercial | timing | duplicate_hint | site_condition | other, detail, quote}
+owner_status:      loi_signed | in_talks | not_contacted | refused | unknown   + quote
+sentiment:         supportive | neutral | opposed | unknown                      + quote
+area_override_m2:  number | unknown                                               + quote
+protected_area:    true | unknown                                                 + quote   (code adds source: registry | note)
+caveats[]:         {detail, quote}
 ```
 
 ### Signal-to-rubric mapping (in code)
@@ -102,7 +102,7 @@ caveats[]:         {kind: commercial | timing | duplicate_hint | site_condition 
 **Goal:** Turn one site's notes into validated signals.
 **Requirements:** R1, R2, R6. KTD5, KTD6, KTD8.
 **Files:** `prompts/extract_notes.md`, `rank.py` (extraction function), `out/extractions.json` (committed cache).
-**Approach:** The prompt defines each category in plain words (what counts as supportive, neutral, opposed). It says "quote verbatim, one continuous span", "unknown if not stated" and "do not infer from tone". It gives no rubric numbers. The site's notes go in date-sorted, each tagged with date. The cache is keyed by site_id plus a hash of the prompt file, so editing the prompt refreshes results automatically; `--refresh` forces a re-call. The cache is written after each site, so if a call fails the run stops, and rerunning only calls the API for sites missing from the cache. `.env` is read by hand (no python-dotenv), overriding the shell's `ANTHROPIC_API_KEY`.
+**Approach:** The prompt defines each category in plain words (what counts as supportive, neutral, opposed). It says "quote verbatim, one continuous span", "unknown if not stated" and "do not infer from tone". It gives no rubric numbers. The site's notes go in date-sorted, each tagged with date. The cache is keyed by site_id; `--refresh` re-calls the API (use it after editing the prompt). The cache is written after each site, so if a call fails the run stops, and rerunning only calls the API for sites missing from the cache. `.env` is read by hand (no python-dotenv), overriding the shell's `ANTHROPIC_API_KEY`.
 **Test scenarios:**
 - S-024 (no notes) returns every signal `unknown`, without calling the API.
 - S-030 returns sentiment opposed, with the petition quote.
@@ -115,7 +115,7 @@ caveats[]:         {kind: commercial | timing | duplicate_hint | site_condition 
 **Requirements:** R3, R4. KTD4, KTD6, KTD7.
 **Dependencies:** U1.
 **Files:** `rank.py`.
-**Approach:** For each signal, check that the quote is a substring of one of the site's note texts (after whitespace normalisation). If not, the signal becomes unknown and goes into `out/rejected_quotes.json`. Owner status comes from the latest-dated note that has a structured `owner_status`. Claude's value is stored as `owner_status_claude` next to `owner_status_field`. C3 is scored from the field, and the page shows "check" whenever the two differ. The area override is applied only if the note date is later than the landreg `record_date`.
+**Approach:** For each signal, check that the quote is a substring of one of the site's note texts (after whitespace normalisation). If not, the signal becomes unknown and the rejected quote is recorded in that site's entry in `out/extractions.json`. Owner status comes from the latest-dated note that has a structured `owner_status`. Claude's value is stored as `owner_status_claude` next to `owner_status_field`. C3 is scored from the field, and the page shows "check" whenever the two differ. The area override is applied only if the note date is later than the landreg `record_date`.
 **Test scenarios:**
 - A fabricated quote is rejected and the signal becomes unknown.
 - S-020 resolves to refused, even though the notes are stored out of order.
@@ -129,7 +129,7 @@ caveats[]:         {kind: commercial | timing | duplicate_hint | site_condition 
 **Goal:** Prove the extraction is right.
 **Requirements:** R5. KTD9.
 **Dependencies:** U1, U2.
-**Files:** `eval/gold_notes.json` (18 distinct texts, hand-labelled), `check_extraction.py`, `EVAL.md`.
+**Files:** `eval/gold_notes.json` (18 distinct texts, hand-labelled), `rank.py` (`--check` flag), `EVAL.md`.
 **Approach:** Hand-label each distinct note text once (owner, sentiment, area, protected). Expand the labels to every site by text match. Resolve per site with the same latest-note logic as U2, then compare against Claude's resolved signals. Report agreement per signal, every mismatch with its quote, and the count of rejected quotes.
 **Test scenarios:**
 - A deliberately wrong gold label shows up as a mismatch line (proves the check isn't vacuous).
@@ -142,7 +142,7 @@ caveats[]:         {kind: commercial | timing | duplicate_hint | site_condition 
 
 - `python3 rank.py` works from a clean clone with the key set, and a second run makes zero API calls.
 - The asserts pass: S-020 refused, S-013 700 m², S-009 excluded with `source: note`, no rejected quotes (or each one explained in `EVAL.md`).
-- `python3 check_extraction.py` prints per-signal agreement across 39 sites.
+- `python3 rank.py --check` prints per-signal agreement across 39 sites.
 - `grep -r sk-ant` finds nothing in the repo or git history.
 
 ## Definition of Done
