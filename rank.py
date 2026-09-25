@@ -1,0 +1,210 @@
+"""Score and rank the candidate battery sites.
+
+Claude reads the field notes (see prompts/); this file decides every score.
+Run: python rank.py            ranked table
+     python rank.py S-013      why one site scored what it did
+"""
+import argparse
+import csv
+import json
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+ROOT = Path(__file__).parent
+OUT = ROOT / "out"
+
+# --- Sponsor rubric: the only place the numbers live -------------------------
+WEIGHTS = {"C1": 30, "C2": 15, "C3": 20, "C4": 10, "C5": 15, "C6": 10}
+LABELS = {"C1": "Grid headroom", "C2": "Distance to substation", "C3": "Landowner",
+          "C4": "Council / community", "C5": "Flood zone", "C6": "Usable area"}
+OWNER = {"loi_signed": 5, "in_talks": 3, "not_contacted": 1, "refused": 0}
+SENTIMENT = {"supportive": 5, "neutral": 3, "opposed": 0}
+FLOOD = {"none": 5, "low": 4, "medium": 2, "high": 0}
+
+
+def tier_headroom(mw):  # exactly 2.0 counts as "2-4", like ">= 4" does
+    return 5 if mw >= 4 else 3 if mw >= 2 else 1 if mw >= 1 else 0
+
+
+def tier_distance(km):
+    return 5 if km <= 1 else 3 if km <= 3 else 1 if km <= 6 else 0
+
+
+def tier_area(m2):
+    return 5 if m2 >= 1200 else 2 if m2 >= 800 else 0
+
+
+def crit(value, tier, source, quote=None, note=None):
+    """One criterion's evidence. tier None = unknown (scores 0, best case 5)."""
+    return {"value": value, "tier": tier, "source": source, "quote": quote, "note": note}
+
+
+# --- Load + data fixes -------------------------------------------------------
+def load():
+    sites = json.loads((ROOT / "data/sites.json").read_text())["sites"]
+    with open(ROOT / "data/fetch_log.csv") as f:
+        log = {(r["site_id"], r["source"]): r for r in csv.DictReader(f)}
+    return merge_duplicates(sites), log
+
+
+def merge_duplicates(sites):
+    """Same land parcel logged twice (S-017 / S-031): one site, all notes kept."""
+    by_parcel = {}
+    for s in sites:
+        s["ids"] = [s["site_id"]]
+        first = by_parcel.setdefault(s["parcel_id"], s)
+        if first is not s:
+            first["ids"].append(s["site_id"])
+            first["site_id"] += "/" + s["site_id"]
+            first["field_notes"] += s["field_notes"]
+    return list(by_parcel.values())
+
+
+def grid_criteria(s, log):
+    g = s["sources"]["gridmap"] or {}
+    msg = log[(s["ids"][0], "gridmap")]["message"]
+    if g.get("headroom") is not None:
+        # Nordholm publishes kW and the feed doesn't convert. Delete once it does.
+        mw = g["headroom"] / 1000 if s["region"] == "Nordholm" else g["headroom"]
+        km = g["substation_distance_km"]
+        return crit(mw, tier_headroom(mw), "gridmap"), crit(km, tier_distance(km), "gridmap")
+    if "no substation" in msg:  # a real answer, not missing data
+        return crit(None, 0, "gridmap", note=msg), crit(None, 0, "gridmap", note=msg)
+    # Fetch failed (503): official figure unknown. Vendor estimate, low end of its band.
+    v = s["sources"]["vendor_estimate"]
+    far = crit(None, None, "unknown", note=f"gridmap fetch failed: {msg}")
+    if not v:
+        return crit(None, None, "unknown", note=f"gridmap fetch failed: {msg}"), far
+    mw = round(v["headroom_mw_est"] * (1 - v["band_pct"] / 100), 2)
+    note = f"unverified: vendor estimate {v['headroom_mw_est']} MW ±{v['band_pct']}%, scored at low end"
+    return crit(mw, tier_headroom(mw), "vendor-lowband", note=note), far
+
+
+def latest_owner_status(notes):
+    typed = [n for n in notes if n.get("owner_status")]
+    return max(typed, key=lambda n: n["date"]) if typed else None
+
+
+# --- Scoring -----------------------------------------------------------------
+def evaluate(s, log, ex):
+    """ex = verified Claude signals for this site ({} if not extracted yet)."""
+    c = {}
+    c["C1"], c["C2"] = grid_criteria(s, log)
+
+    n = latest_owner_status(s["field_notes"])
+    claude_owner = ex.get("owner_status", {}).get("value")
+    c["C3"] = (crit(n["owner_status"], OWNER[n["owner_status"]], "typed-field",
+                    quote=n["text"], note=n["date"]) if n else
+               crit(None, None, "unknown", note="no owner status in notes"))
+    c["C3"]["claude"] = claude_owner
+
+    sent = ex.get("sentiment", {})
+    c["C4"] = (crit(sent["value"], SENTIMENT[sent["value"]], "note", quote=sent["quote"], note=sent.get("date"))
+               if sent.get("value") in SENTIMENT else crit(None, None, "unknown", note="no council/community note"))
+
+    lr = s["sources"]["landreg"]
+    if lr is None:
+        c["C5"] = crit(None, None, "unknown", note="parcel not in land registry")
+        c["C6"] = crit(None, None, "unknown", note="parcel not in land registry")
+    else:
+        c["C5"] = crit(lr["flood_zone"], FLOOD[lr["flood_zone"]], "landreg", note=lr["record_date"])
+        area = ex.get("area_override_m2", {})
+        if isinstance(area.get("value"), (int, float)) and area["date"] > lr["record_date"]:
+            c["C6"] = crit(area["value"], tier_area(area["value"]), "note", quote=area["quote"],
+                           note=f"note {area['date']} overrides registry {lr['area_m2']} m² ({lr['record_date']})")
+        else:
+            c["C6"] = crit(lr["area_m2"], tier_area(lr["area_m2"]), "landreg", note=lr["record_date"])
+
+    kill = None
+    if lr and lr["protected_area"]:
+        kill = {"source": "registry", "quote": None, "note": "land registry: protected nature area"}
+    elif ex.get("protected_area", {}).get("value") is True:
+        p = ex["protected_area"]
+        kill = {"source": "note", "quote": p["quote"], "note": "field note says protected area; needs checking"}
+
+    flags = []
+    if c["C1"]["source"] == "vendor-lowband":
+        flags.append("headroom unverified (vendor estimate)")
+    if claude_owner and n and claude_owner != n["owner_status"]:
+        flags.append(f"check owner: typed '{n['owner_status']}', notes read as '{claude_owner}'")
+    if sent.get("check"):
+        flags.append("check sentiment: quote came from an owner note")
+    if len(s["ids"]) > 1:
+        flags.append("logged twice (" + ", ".join(s["ids"]) + "), merged")
+
+    known = sum(v["tier"] is not None for v in c.values())
+    return {
+        "site_id": s["site_id"], "name": s["name"], "region": s["region"],
+        "score": points(c), "best_case": points(c, best=True), "known": known,
+        "criteria": c, "kill": kill, "flags": flags, "caveats": ex.get("caveats", []),
+    }
+
+
+def points(c, best=False):
+    return round(sum(WEIGHTS[k] * (v["tier"] if v["tier"] is not None else 5 * best) / 5
+                     for k, v in c.items()), 1)
+
+
+# --- Output ------------------------------------------------------------------
+def print_table(ranked, excluded):
+    print(f"{'#':>2}  {'site':<12}{'name':<26}{'score':>6}{'best':>6}  known  flags")
+    for i, r in enumerate(ranked, 1):
+        print(f"{i:>2}  {r['site_id']:<12}{r['name'][:25]:<26}{r['score']:>6}{r['best_case']:>6}  "
+              f"{r['known']}/6    {'; '.join(r['flags'])}")
+        if i == 5:
+            print("    " + "-" * 60 + " shortlist above")
+    print("\nExcluded (protected nature area):")
+    for r in excluded:
+        print(f"    {r['site_id']:<12}{r['name']:<26}{r['kill']['note']}"
+              + (f' — "{r["kill"]["quote"]}"' if r["kill"]["quote"] else ""))
+
+
+def print_site(r):
+    print(f"{r['site_id']} {r['name']} ({r['region']})  score {r['score']}  best case {r['best_case']}")
+    if r["kill"]:
+        print(f"  EXCLUDED: {r['kill']['note']} [{r['kill']['source']}]"
+              + (f' "{r["kill"]["quote"]}"' if r["kill"]["quote"] else ""))
+    for k, v in r["criteria"].items():
+        pts = WEIGHTS[k] * (v["tier"] or 0) / 5
+        tier = "unknown" if v["tier"] is None else f"tier {v['tier']}"
+        print(f"  {k} {LABELS[k]:<24}{str(v['value']):<14}{tier:<9}{pts:>5.1f}/{WEIGHTS[k]}  [{v['source']}]"
+              + (f"  {v['note']}" if v["note"] else ""))
+        if v["quote"]:
+            print(f'       "{v["quote"]}"')
+    for f in r["flags"]:
+        print(f"  ! {f}")
+    for cav in r["caveats"]:
+        print(f'  caveat: {cav["detail"]} — "{cav["quote"]}"')
+
+
+def main():
+    load_dotenv(ROOT / ".env", override=True)  # repo key wins over any shell key
+    ap = argparse.ArgumentParser()
+    ap.add_argument("site", nargs="?", help="show why one site scored what it did, e.g. S-013")
+    args = ap.parse_args()
+
+    sites, log = load()
+    cache = OUT / "extractions.json"
+    extractions = json.loads(cache.read_text()) if cache.exists() else {}
+    results = [evaluate(s, log, extractions.get(s["site_id"], {})) for s in sites]
+
+    by_id = {r["site_id"]: r for r in results}
+    assert len(results) == 39, len(results)
+    assert by_id["S-020"]["criteria"]["C3"]["value"] == "refused"
+    assert by_id["S-033"]["kill"]["source"] == "registry"
+
+    ranked = sorted((r for r in results if not r["kill"]), key=lambda r: (-r["score"], -r["known"]))
+    excluded = [r for r in results if r["kill"]]
+    OUT.mkdir(exist_ok=True)
+    (OUT / "results.json").write_text(json.dumps({"ranked": ranked, "excluded": excluded}, indent=2))
+
+    if args.site:
+        match = [r for r in results if args.site in r["site_id"].split("/")]
+        print_site(match[0]) if match else print(f"no site {args.site}")
+    else:
+        print_table(ranked, excluded)
+
+
+if __name__ == "__main__":
+    main()
