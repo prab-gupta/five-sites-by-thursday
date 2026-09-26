@@ -250,6 +250,8 @@ def evaluate(s, log, ex):
         flags.append(f"check owner: typed '{n['owner_status']}', notes read as '{claude_owner}'")
     if sent.get("check"):
         flags.append("check sentiment: quote came from an owner note")
+    if c["C6"]["source"] == "note":
+        flags.append("area from a field note, approximate: confirm size")
     if len(s["ids"]) > 1:
         flags.append("logged twice (" + ", ".join(s["ids"]) + "), merged")
 

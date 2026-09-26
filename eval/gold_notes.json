@@ -1,0 +1,110 @@
+{
+  "Good first call with the owner, sending heads of terms.": {
+    "owner_status": "in_talks",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Owner signed the letter of intent.": {
+    "owner_status": "loi_signed",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Local energy co-op wrote to the council backing the project.": {
+    "owner_status": "unknown",
+    "sentiment": "supportive",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Neighbours we spoke to were indifferent.": {
+    "owner_status": "unknown",
+    "sentiment": "neutral",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Council planning committee minutes record support for local storage on this plot.": {
+    "owner_status": "unknown",
+    "sentiment": "supportive",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Met the ward councillor; she is openly in favour and offered to speak at the hearing.": {
+    "owner_status": "unknown",
+    "sentiment": "supportive",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Council has no formal position yet; officer said 'depends on the noise report'.": {
+    "owner_status": "unknown",
+    "sentiment": "neutral",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Owner not contacted yet.": {
+    "owner_status": "not_contacted",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Owner signed the letter of intent. Wants 12% revenue share.": {
+    "owner_status": "loi_signed",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Owner signed the letter of intent. Owner very keen.": {
+    "owner_status": "loi_signed",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Municipal ecologist says the northern third of the plot falls inside the Esker Meadows reserve designated in 2024. Needs checking before we go further.": {
+    "owner_status": "unknown",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "protected"
+  },
+  "Southern half was sold for housing last year; roughly 700 m² remains. Good first call with the owner, sending heads of terms.": {
+    "owner_status": "in_talks",
+    "sentiment": "unknown",
+    "area_m2": 700,
+    "protected_area": "unknown"
+  },
+  "Owner declined to lease. Board voted against. Revisit in 2027.": {
+    "owner_status": "refused",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Good first call with the owner, sending heads of terms. Very positive first call.": {
+    "owner_status": "in_talks",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Residents' association has started a petition against 'industrial batteries' next to the school.": {
+    "owner_status": "unknown",
+    "sentiment": "opposed",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Owner signed the letter of intent. (Brekke depot, finally.)": {
+    "owner_status": "loi_signed",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Drove past. Yard looks disused and big. No idea who owns it.": {
+    "owner_status": "unknown",
+    "sentiment": "unknown",
+    "area_m2": null,
+    "protected_area": "unknown"
+  },
+  "Councillor raised fire-safety objections at last month's meeting; expect a fight.": {
+    "owner_status": "unknown",
+    "sentiment": "opposed",
+    "area_m2": null,
+    "protected_area": "unknown"
+  }
+}

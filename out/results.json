@@ -359,7 +359,9 @@
         }
       },
       "kill": null,
-      "flags": [],
+      "flags": [
+        "area from a field note, approximate: confirm size"
+      ],
       "caveats": [
         {
           "detail": "Part of the original plot (the southern half) was sold off for housing last year, so only the remaining portion is available.",
