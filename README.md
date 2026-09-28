@@ -2,7 +2,7 @@
 
 Scores and ranks 40 candidate community-battery sites against the sponsor's rubric. Claude reads the field notes and returns quoted signals; the code decides every score.
 
-- **Page for Maren:** _URL to be added_
+- **Page for Maren:** https://five-sites-by-thursday.vercel.app
 - **Written recommendation:** [NOTE.md](NOTE.md)
 - **Questions and assumptions (written before any code):** [QUESTIONS.md](QUESTIONS.md)
 - **Extraction check:** [EVAL.md](EVAL.md)
@@ -98,4 +98,4 @@ Built with Claude Code and a Gemini chat. Conversations are in [ai-transcripts/]
 
 ## Time spent
 
-_To fill in._
+About 4.5 hours in total.
