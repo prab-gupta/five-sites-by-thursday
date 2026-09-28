@@ -187,7 +187,7 @@
     },
     "caveats": [
       {
-        "detail": "Council's position hinges on a noise report that has not yet been delivered.",
+        "detail": "Council's position is conditional on the noise report.",
         "quote": "officer said 'depends on the noise report'"
       }
     ],
@@ -309,12 +309,7 @@
       "quote": "",
       "value": null
     },
-    "caveats": [
-      {
-        "detail": "Council's position is contingent on a noise report that has not yet been decided.",
-        "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
-      }
-    ],
+    "caveats": [],
     "owner_status": {
       "quote": "Good first call with the owner, sending heads of terms.",
       "value": "in_talks"
@@ -427,12 +422,7 @@
       "quote": "",
       "value": null
     },
-    "caveats": [
-      {
-        "detail": "Council's position is contingent on a pending noise report.",
-        "quote": "officer said 'depends on the noise report'"
-      }
-    ],
+    "caveats": [],
     "owner_status": {
       "quote": "Good first call with the owner, sending heads of terms.",
       "value": "in_talks"
@@ -529,7 +519,7 @@
     },
     "caveats": [
       {
-        "detail": "Council's position is contingent on a noise report that has not yet been delivered.",
+        "detail": "The council's position is tied to the noise report, per the officer.",
         "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
       }
     ],

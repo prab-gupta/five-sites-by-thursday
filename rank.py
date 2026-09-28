@@ -18,6 +18,7 @@ ROOT = Path(__file__).parent
 OUT = ROOT / "out"
 
 # --- Sponsor rubric: the only place the numbers live -------------------------
+BEST_CASE = "Assumes missing criteria receive maximum points. Existing values and estimates stay unchanged."
 WEIGHTS = {"C1": 30, "C2": 15, "C3": 20, "C4": 10, "C5": 15, "C6": 10}
 LABELS = {"C1": "Grid headroom", "C2": "Distance to substation", "C3": "Landowner",
           "C4": "Council / community", "C5": "Flood zone", "C6": "Usable area"}
@@ -71,7 +72,8 @@ def grid_criteria(s, log):
         # Nordholm publishes kW and the feed doesn't convert. Delete once it does.
         mw = g["headroom"] / 1000 if s["region"] == "Nordholm" else g["headroom"]
         km = g["substation_distance_km"]
-        return crit(mw, tier_headroom(mw), "gridmap"), crit(km, tier_distance(km), "gridmap")
+        asof = f"as of {g['data_as_of']}"
+        return crit(mw, tier_headroom(mw), "gridmap", note=asof), crit(km, tier_distance(km), "gridmap", note=asof)
     if "no substation" in msg:  # a real answer, not missing data
         return crit(None, 0, "gridmap", note=msg), crit(None, 0, "gridmap", note=msg)
     # Fetch failed (503): official figure unknown. Vendor estimate, low end of its band.
@@ -125,19 +127,24 @@ def extract(client, site):
 
 
 def extractions(sites, refresh):
-    """Cached per site in out/extractions.json; only missing sites hit the API."""
+    """Cached per site in out/extractions.json; only missing sites hit the API.
+    refresh: None = use cache, [] = re-read every site, ["S-013", ...] = re-read those."""
     path = OUT / "extractions.json"
-    cache = {} if refresh or not path.exists() else json.loads(path.read_text())
-    client = None
+    cache = json.loads(path.read_text()) if path.exists() and refresh != [] else {}
+    for sid in list(cache):
+        if refresh and set(sid.split("/")) & set(refresh):
+            del cache[sid]
+    client, calls = None, 0
     for s in sites:
         if s["site_id"] in cache or not s["field_notes"]:
             continue
         client = client or anthropic.Anthropic()
         print(f"reading notes: {s['site_id']}")
         cache[s["site_id"]] = extract(client, s)
+        calls += 1
         OUT.mkdir(exist_ok=True)
         path.write_text(json.dumps(cache, indent=2, sort_keys=True))  # after each site
-    return cache
+    return cache, calls
 
 
 def norm(text):
@@ -201,6 +208,18 @@ def check(sites, raw):
         print(f"- {sid} {r['field']}: \"{r['quote']}\"")
 
 
+def headroom_conflict(s, c1):
+    """Official figure scores; warn when the vendor's central estimate lands in a different tier."""
+    v = s["sources"]["vendor_estimate"]
+    if c1["source"] != "gridmap" or c1["value"] is None or not v:
+        return None
+    if tier_headroom(v["headroom_mw_est"]) == c1["tier"]:
+        return None
+    return (f"headroom sources disagree: official {c1['value']} MW (grid operator, "
+            f"{c1['note']}) vs vendor estimate {v['headroom_mw_est']} MW (estimated {v['estimated_at']}). "
+            "Vendor model is unvalidated; check with the grid operator. Score uses the official figure.")
+
+
 def latest_owner_status(notes):
     typed = [n for n in notes if n.get("owner_status")]
     return max(typed, key=lambda n: n["date"]) if typed else None
@@ -246,6 +265,8 @@ def evaluate(s, log, ex):
     flags = []
     if c["C1"]["source"] == "vendor-lowband":
         flags.append("headroom unverified (vendor estimate)")
+    if conflict := headroom_conflict(s, c["C1"]):
+        flags.append(conflict)
     if claude_owner and n and claude_owner != n["owner_status"]:
         flags.append(f"check owner: typed '{n['owner_status']}', notes read as '{claude_owner}'")
     if sent.get("check"):
@@ -255,6 +276,8 @@ def evaluate(s, log, ex):
     if len(s["ids"]) > 1:
         flags.append("logged twice (" + ", ".join(s["ids"]) + "), merged")
 
+    for k, v in c.items():  # page.py reads these; the rubric lives only here
+        v["weight"], v["points"] = WEIGHTS[k], WEIGHTS[k] * (v["tier"] or 0) / 5
     known = sum(v["tier"] is not None for v in c.values())
     return {
         "site_id": s["site_id"], "name": s["name"], "region": s["region"],
@@ -271,12 +294,13 @@ def points(c, best=False):
 
 # --- Output ------------------------------------------------------------------
 def print_table(ranked, excluded):
-    print(f"{'#':>2}  {'site':<12}{'name':<26}{'score':>6}{'best':>6}  known  flags")
+    print(f"{'#':>2}  {'site':<12}{'name':<26}{'score':>6}{'best*':>6}  known  flags")
     for i, r in enumerate(ranked, 1):
         print(f"{i:>2}  {r['site_id']:<12}{r['name'][:25]:<26}{r['score']:>6}{r['best_case']:>6}  "
               f"{r['known']}/6    {'; '.join(r['flags'])}")
         if i == 5:
             print("    " + "-" * 60 + " shortlist above")
+    print(f"\n* best case: {BEST_CASE}")
     print("\nExcluded (protected nature area):")
     for r in excluded:
         print(f"    {r['site_id']:<12}{r['name']:<26}{r['kill']['note']}"
@@ -285,13 +309,13 @@ def print_table(ranked, excluded):
 
 def print_site(r):
     print(f"{r['site_id']} {r['name']} ({r['region']})  score {r['score']}  best case {r['best_case']}")
+    print(f"  (best case: {BEST_CASE})")
     if r["kill"]:
         print(f"  EXCLUDED: {r['kill']['note']} [{r['kill']['source']}]"
               + (f' "{r["kill"]["quote"]}"' if r["kill"]["quote"] else ""))
     for k, v in r["criteria"].items():
-        pts = WEIGHTS[k] * (v["tier"] or 0) / 5
         tier = "unknown" if v["tier"] is None else f"tier {v['tier']}"
-        print(f"  {k} {LABELS[k]:<24}{str(v['value']):<14}{tier:<9}{pts:>5.1f}/{WEIGHTS[k]}  [{v['source']}]"
+        print(f"  {k} {LABELS[k]:<24}{str(v['value']):<14}{tier:<9}{v["points"]:>5.1f}/{v["weight"]}  [{v['source']}]"
               + (f"  {v['note']}" if v["note"] else ""))
         if v["quote"]:
             print(f'       "{v["quote"]}"')
@@ -306,13 +330,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("site", nargs="?", help="show why one site scored what it did, e.g. S-013")
     ap.add_argument("--check", action="store_true", help="compare Claude's extraction with hand labels")
-    ap.add_argument("--refresh", action="store_true", help="re-read all notes with Claude")
+    ap.add_argument("--refresh", nargs="*", metavar="SITE",
+                    help="re-read notes with Claude: all sites, or only the ones named")
     args = ap.parse_args()
 
     sites, log = load()
-    raw = extractions(sites, args.refresh)
+    raw, calls = extractions(sites, args.refresh)
+    footer = f"\nClaude calls this run: {calls} ({len(raw) - calls} from cache out/extractions.json)"
     if args.check:
-        return check(sites, raw)
+        check(sites, raw)
+        return print(footer)
     results = [evaluate(s, log, verify(raw.get(s["site_id"], {}), s["field_notes"])) for s in sites]
 
     by_id = {r["site_id"]: r for r in results}
@@ -326,13 +353,14 @@ def main():
     ranked = sorted((r for r in results if not r["kill"]), key=lambda r: (-r["score"], -r["known"]))
     excluded = [r for r in results if r["kill"]]
     OUT.mkdir(exist_ok=True)
-    (OUT / "results.json").write_text(json.dumps({"ranked": ranked, "excluded": excluded}, indent=2))
+    (OUT / "results.json").write_text(json.dumps({"best_case_means": BEST_CASE, "ranked": ranked, "excluded": excluded}, indent=2))
 
     if args.site:
         match = [r for r in results if args.site in r["site_id"].split("/")]
         print_site(match[0]) if match else print(f"no site {args.site}")
     else:
         print_table(ranked, excluded)
+    print(footer)
 
 
 if __name__ == "__main__":

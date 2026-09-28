@@ -22,4 +22,4 @@ Fields:
   - `opposed`: an objection, a petition, or a councillor against it
 - `area_m2`: usable area in square metres, only if a note states a figure for what is usable now. Otherwise `null`.
 - `protected_area`: `protected` if a note says any part of the plot is inside a protected nature area or reserve, else `unknown`.
-- `caveats`: anything else in the notes that someone choosing sites should know (commercial terms, timing, site condition, a hint the site is logged twice). Each with its exact quote. Empty list if none.
+- `caveats`: anything else in the notes that someone choosing sites should know (commercial terms, timing, site condition, a hint the site is logged twice). Each with its exact quote. Empty list if none. A caveat restates only what a note says: do not infer missing facts, such as whether a report exists, is pending or has been delivered.

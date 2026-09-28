@@ -1,4 +1,5 @@
 {
+  "best_case_means": "Assumes missing criteria receive maximum points. Existing values and estimates stay unchanged.",
   "ranked": [
     {
       "site_id": "S-003",
@@ -13,14 +14,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.8,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -28,28 +33,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent. Wants 12% revenue share.",
           "note": "2026-08-19",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Council planning committee minutes record support for local storage on this plot.",
-          "note": "2026-09-03"
+          "note": "2026-09-03",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-09-12"
+          "note": "2025-09-12",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 2100,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-09-12"
+          "note": "2025-09-12",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -75,14 +88,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.8,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -90,28 +107,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-08-10",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Council planning committee minutes record support for local storage on this plot.",
-          "note": "2026-08-12"
+          "note": "2026-08-12",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1700,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -132,14 +157,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.9,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -147,28 +176,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent. (Brekke depot, finally.)",
           "note": "2026-09-08",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Neighbours we spoke to were indifferent.",
-          "note": "2026-07-02"
+          "note": "2026-07-02",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1800,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -200,14 +237,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.5,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -215,35 +256,43 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-07-30",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
-          "note": "2026-08-21"
+          "note": "2026-08-21",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1400,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
       "flags": [],
       "caveats": [
         {
-          "detail": "Council's position is contingent on a noise report that has not yet been delivered.",
+          "detail": "The council's position is tied to the noise report, per the officer.",
           "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
         }
       ],
@@ -262,14 +311,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 1.4,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -277,28 +330,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-11",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
-          "note": "2026-08-02"
+          "note": "2026-08-02",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1600,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -319,14 +380,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.9,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "in_talks",
@@ -334,28 +399,36 @@
           "source": "typed-field",
           "quote": "Southern half was sold for housing last year; roughly 700 m\u00b2 remains. Good first call with the owner, sending heads of terms.",
           "note": "2026-08-28",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Council planning committee minutes record support for local storage on this plot.",
-          "note": "2026-08-28"
+          "note": "2026-08-28",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2017-02-11"
+          "note": "2017-02-11",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 700,
           "tier": 0,
           "source": "note",
           "quote": "roughly 700 m\u00b2 remains",
-          "note": "note 2026-08-28 overrides registry 2400 m\u00b2 (2017-02-11)"
+          "note": "note 2026-08-28 overrides registry 2400 m\u00b2 (2017-02-11)",
+          "weight": 10,
+          "points": 0.0
         }
       },
       "kill": null,
@@ -383,14 +456,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 1.0,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "in_talks",
@@ -398,32 +475,42 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-02",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
-      "flags": [],
+      "flags": [
+        "headroom sources disagree: official 4.5 MW (grid operator, as of 2026-06-30) vs vendor estimate 2.1 MW (estimated 2026-09-15). Vendor model is unvalidated; check with the grid operator. Score uses the official figure."
+      ],
       "caveats": [],
       "rejected_quotes": []
     },
@@ -440,14 +527,18 @@
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": 0.6,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -455,28 +546,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-08-16",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Council planning committee minutes record support for local storage on this plot.",
-          "note": "2026-08-17"
+          "note": "2026-08-17",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 2300,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -497,14 +596,18 @@
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-03-31",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": 0.7,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-03-31",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -512,32 +615,42 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-08-22",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
-          "note": "2026-08-22"
+          "note": "2026-08-22",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 2000,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
-      "flags": [],
+      "flags": [
+        "headroom sources disagree: official 1.6 MW (grid operator, as of 2026-03-31) vs vendor estimate 5.2 MW (estimated 2026-09-15). Vendor model is unvalidated; check with the grid operator. Score uses the official figure."
+      ],
       "caveats": [],
       "rejected_quotes": []
     },
@@ -554,14 +667,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 1.1,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "refused",
@@ -569,28 +686,36 @@
           "source": "typed-field",
           "quote": "Owner declined to lease. Board voted against. Revisit in 2027.",
           "note": "2026-09-05",
-          "claude": "refused"
+          "claude": "refused",
+          "weight": 20,
+          "points": 0.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-07-21"
+          "note": "2026-07-21",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -620,14 +745,18 @@
           "tier": 3,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 4.8 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 4.8 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "loi_signed",
@@ -635,28 +764,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-09-09",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-08-14"
+          "note": "2026-08-14",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1900,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -679,14 +816,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 4.1,
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 3.0
         },
         "C3": {
           "value": "in_talks",
@@ -694,28 +835,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-17",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-08-26"
+          "note": "2026-08-26",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1300,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -736,14 +885,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 2.8,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -751,28 +904,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-07-14",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
-          "note": "2026-08-23"
+          "note": "2026-08-23",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 900,
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 4.0
         }
       },
       "kill": null,
@@ -793,14 +954,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 1.3,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -808,28 +973,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-12",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Neighbours we spoke to were indifferent.",
-          "note": "2026-08-13"
+          "note": "2026-08-13",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -850,14 +1023,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 2.3,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -865,38 +1042,43 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-02",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
-          "note": "2026-08-19"
+          "note": "2026-08-19",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
-      "flags": [],
-      "caveats": [
-        {
-          "detail": "Council's position is contingent on a noise report that has not yet been decided.",
-          "quote": "Council has no formal position yet; officer said 'depends on the noise report'."
-        }
+      "flags": [
+        "headroom sources disagree: official 3.5 MW (grid operator, as of 2026-06-30) vs vendor estimate 4.1 MW (estimated 2026-09-15). Vendor model is unvalidated; check with the grid operator. Score uses the official figure."
       ],
+      "caveats": [],
       "rejected_quotes": []
     },
     {
@@ -912,14 +1094,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-03-31",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 1.8,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-03-31",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -927,38 +1113,43 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-30",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
-          "note": "2026-08-30"
+          "note": "2026-08-30",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1700,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
-      "flags": [],
-      "caveats": [
-        {
-          "detail": "Council's position is contingent on a pending noise report.",
-          "quote": "officer said 'depends on the noise report'"
-        }
+      "flags": [
+        "headroom sources disagree: official 2.4 MW (grid operator, as of 2026-03-31) vs vendor estimate 4.9 MW (estimated 2026-09-15). Vendor model is unvalidated; check with the grid operator. Score uses the official figure."
       ],
+      "caveats": [],
       "rejected_quotes": []
     },
     {
@@ -974,14 +1165,18 @@
           "tier": 3,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 3.4 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 3.4 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "loi_signed",
@@ -989,28 +1184,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-09-09",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Neighbours we spoke to were indifferent.",
-          "note": "2026-08-08"
+          "note": "2026-08-08",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1800,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1033,14 +1236,18 @@
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": 2.3,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "loi_signed",
@@ -1048,28 +1255,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-07-18",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-08-27"
+          "note": "2026-08-27",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1100,
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 4.0
         }
       },
       "kill": null,
@@ -1090,14 +1305,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 1.1,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -1105,28 +1324,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-22",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "opposed",
           "tier": 0,
           "source": "note",
           "quote": "Residents' association has started a petition against 'industrial batteries' next to the school.",
-          "note": "2026-08-24"
+          "note": "2026-08-24",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 1350,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1156,14 +1383,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 2.4,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "loi_signed",
@@ -1171,35 +1402,43 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-07-17",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Council has no formal position yet; officer said 'depends on the noise report'.",
-          "note": "2026-08-23"
+          "note": "2026-08-23",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "high",
           "tier": 0,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 0.0
         },
         "C6": {
           "value": 1800,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
       "flags": [],
       "caveats": [
         {
-          "detail": "Council's position hinges on a noise report that has not yet been delivered.",
+          "detail": "Council's position is conditional on the noise report.",
           "quote": "officer said 'depends on the noise report'"
         }
       ],
@@ -1218,14 +1457,18 @@
           "tier": 3,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 4.3 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 4.3 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "in_talks",
@@ -1233,28 +1476,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-28",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Council planning committee minutes record support for local storage on this plot.",
-          "note": "2026-09-01"
+          "note": "2026-09-01",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1300,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1277,14 +1528,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 4.2,
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 3.0
         },
         "C3": {
           "value": "in_talks",
@@ -1292,28 +1547,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-26",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Neighbours we spoke to were indifferent.",
-          "note": "2026-08-11"
+          "note": "2026-08-11",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "medium",
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 6.0
         },
         "C6": {
           "value": 1100,
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 4.0
         }
       },
       "kill": null,
@@ -1334,14 +1597,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 2.0,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -1349,32 +1616,42 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-19",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1800,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
-      "flags": [],
+      "flags": [
+        "headroom sources disagree: official 2.6 MW (grid operator, as of 2026-06-30) vs vendor estimate 1.8 MW (estimated 2026-09-15). Vendor model is unvalidated; check with the grid operator. Score uses the official figure."
+      ],
       "caveats": [],
       "rejected_quotes": []
     },
@@ -1391,14 +1668,18 @@
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": 1.7,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -1406,32 +1687,42 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-04",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-08-07"
+          "note": "2026-08-07",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "medium",
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 6.0
         },
         "C6": {
           "value": 900,
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 4.0
         }
       },
       "kill": null,
-      "flags": [],
+      "flags": [
+        "headroom sources disagree: official 2.0 MW (grid operator, as of 2026-06-30) vs vendor estimate 1.7 MW (estimated 2026-09-15). Vendor model is unvalidated; check with the grid operator. Score uses the official figure."
+      ],
       "caveats": [],
       "rejected_quotes": []
     },
@@ -1448,14 +1739,18 @@
           "tier": 0,
           "source": "gridmap",
           "quote": null,
-          "note": "no substation within search radius (10 km)"
+          "note": "no substation within search radius (10 km)",
+          "weight": 30,
+          "points": 0.0
         },
         "C2": {
           "value": null,
           "tier": 0,
           "source": "gridmap",
           "quote": null,
-          "note": "no substation within search radius (10 km)"
+          "note": "no substation within search radius (10 km)",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "loi_signed",
@@ -1463,28 +1758,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent.",
           "note": "2026-08-11",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-08-11"
+          "note": "2026-08-11",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 3000,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1505,14 +1808,18 @@
           "tier": 3,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 4.1 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 4.1 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "in_talks",
@@ -1520,28 +1827,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-17",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1564,14 +1879,18 @@
           "tier": 3,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 3.9 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 3.9 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 18.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "in_talks",
@@ -1579,28 +1898,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-20",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1623,14 +1950,18 @@
           "tier": 1,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 2.0 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 2.0 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "in_talks",
@@ -1638,28 +1969,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-09-09",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Local energy co-op wrote to the council backing the project.",
-          "note": "2026-08-16"
+          "note": "2026-08-16",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1682,14 +2021,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.6,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": null,
@@ -1697,28 +2040,36 @@
           "source": "unknown",
           "quote": null,
           "note": "no owner status in notes",
-          "claude": null
+          "claude": null,
+          "weight": 20,
+          "points": 0.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "parcel not in land registry"
+          "note": "parcel not in land registry",
+          "weight": 15,
+          "points": 0.0
         },
         "C6": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "parcel not in land registry"
+          "note": "parcel not in land registry",
+          "weight": 10,
+          "points": 0.0
         }
       },
       "kill": null,
@@ -1739,14 +2090,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.9,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": null,
@@ -1754,28 +2109,36 @@
           "source": "unknown",
           "quote": null,
           "note": "no owner status in notes",
-          "claude": null
+          "claude": null,
+          "weight": 20,
+          "points": 0.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "parcel not in land registry"
+          "note": "parcel not in land registry",
+          "weight": 15,
+          "points": 0.0
         },
         "C6": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "parcel not in land registry"
+          "note": "parcel not in land registry",
+          "weight": 10,
+          "points": 0.0
         }
       },
       "kill": null,
@@ -1801,14 +2164,18 @@
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": 3.4,
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 3.0
         },
         "C3": {
           "value": "in_talks",
@@ -1816,28 +2183,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-07-08",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "opposed",
           "tier": 0,
           "source": "note",
           "quote": "Councillor raised fire-safety objections at last month's meeting; expect a fight.",
-          "note": "2026-08-27"
+          "note": "2026-08-27",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1858,14 +2233,18 @@
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": 2.2,
           "tier": 3,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 9.0
         },
         "C3": {
           "value": "in_talks",
@@ -1873,28 +2252,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-22",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "medium",
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 6.0
         },
         "C6": {
           "value": 1900,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -1915,14 +2302,18 @@
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": 0.9,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "not_contacted",
@@ -1930,28 +2321,36 @@
           "source": "typed-field",
           "quote": "Owner not contacted yet.",
           "note": "2026-08-13",
-          "claude": "not_contacted"
+          "claude": "not_contacted",
+          "weight": 20,
+          "points": 4.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 900,
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 4.0
         }
       },
       "kill": null,
@@ -1972,14 +2371,18 @@
           "tier": 0,
           "source": "gridmap",
           "quote": null,
-          "note": "no substation within search radius (10 km)"
+          "note": "no substation within search radius (10 km)",
+          "weight": 30,
+          "points": 0.0
         },
         "C2": {
           "value": null,
           "tier": 0,
           "source": "gridmap",
           "quote": null,
-          "note": "no substation within search radius (10 km)"
+          "note": "no substation within search radius (10 km)",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "in_talks",
@@ -1987,28 +2390,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-19",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "low",
           "tier": 4,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 12.0
         },
         "C6": {
           "value": 2200,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -2029,14 +2440,18 @@
           "tier": 0,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 0.0
         },
         "C2": {
           "value": 3.4,
           "tier": 1,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 3.0
         },
         "C3": {
           "value": "not_contacted",
@@ -2044,28 +2459,36 @@
           "source": "typed-field",
           "quote": "Owner not contacted yet.",
           "note": "2026-08-15",
-          "claude": "not_contacted"
+          "claude": "not_contacted",
+          "weight": 20,
+          "points": 4.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 2600,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -2086,14 +2509,18 @@
           "tier": 0,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 1.4 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 1.4 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 0.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "in_talks",
@@ -2101,28 +2528,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-11",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
-          "note": "2026-08-01"
+          "note": "2026-08-01",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "high",
           "tier": 0,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 0.0
         },
         "C6": {
           "value": 900,
           "tier": 2,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 4.0
         }
       },
       "kill": null,
@@ -2145,14 +2580,18 @@
           "tier": 1,
           "source": "vendor-lowband",
           "quote": null,
-          "note": "unverified: vendor estimate 3.0 MW \u00b140%, scored at low end"
+          "note": "unverified: vendor estimate 3.0 MW \u00b140%, scored at low end",
+          "weight": 30,
+          "points": 6.0
         },
         "C2": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "gridmap fetch failed: upstream timeout"
+          "note": "gridmap fetch failed: upstream timeout",
+          "weight": 15,
+          "points": 0.0
         },
         "C3": {
           "value": "not_contacted",
@@ -2160,28 +2599,36 @@
           "source": "typed-field",
           "quote": "Owner not contacted yet.",
           "note": "2026-08-16",
-          "claude": "not_contacted"
+          "claude": "not_contacted",
+          "weight": 20,
+          "points": 4.0
         },
         "C4": {
           "value": "neutral",
           "tier": 3,
           "source": "note",
           "quote": "Neighbours we spoke to were indifferent.",
-          "note": "2026-08-28"
+          "note": "2026-08-28",
+          "weight": 10,
+          "points": 6.0
         },
         "C5": {
           "value": "high",
           "tier": 0,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 0.0
         },
         "C6": {
           "value": 1500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": null,
@@ -2206,14 +2653,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.7,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "loi_signed",
@@ -2221,28 +2672,36 @@
           "source": "typed-field",
           "quote": "Owner signed the letter of intent. Owner very keen.",
           "note": "2026-07-14",
-          "claude": "loi_signed"
+          "claude": "loi_signed",
+          "weight": 20,
+          "points": 20.0
         },
         "C4": {
           "value": "supportive",
           "tier": 5,
           "source": "note",
           "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
-          "note": "2026-08-05"
+          "note": "2026-08-05",
+          "weight": 10,
+          "points": 10.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2018-04-20"
+          "note": "2018-04-20",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 2600,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2018-04-20"
+          "note": "2018-04-20",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": {
@@ -2272,14 +2731,18 @@
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 30,
+          "points": 30.0
         },
         "C2": {
           "value": 0.6,
           "tier": 5,
           "source": "gridmap",
           "quote": null,
-          "note": null
+          "note": "as of 2026-06-30",
+          "weight": 15,
+          "points": 15.0
         },
         "C3": {
           "value": "in_talks",
@@ -2287,28 +2750,36 @@
           "source": "typed-field",
           "quote": "Good first call with the owner, sending heads of terms.",
           "note": "2026-08-01",
-          "claude": "in_talks"
+          "claude": "in_talks",
+          "weight": 20,
+          "points": 12.0
         },
         "C4": {
           "value": null,
           "tier": null,
           "source": "unknown",
           "quote": null,
-          "note": "no council/community note"
+          "note": "no council/community note",
+          "weight": 10,
+          "points": 0.0
         },
         "C5": {
           "value": "none",
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 15,
+          "points": 15.0
         },
         "C6": {
           "value": 2500,
           "tier": 5,
           "source": "landreg",
           "quote": null,
-          "note": "2025-11-03"
+          "note": "2025-11-03",
+          "weight": 10,
+          "points": 10.0
         }
       },
       "kill": {
