@@ -1,0 +1,13 @@
+# AI_LOG
+
+Moments I disagreed with or corrected the AI. Conversation exports are in `ai-transcripts/`.
+
+- **Understanding and consistently applying the agreed rubric.** The AI referred to the rubric during planning without first making its role clear enough to me. I re-read the assignment and asked where it came from, because the sponsor had already agreed the criteria and weights. Later, an AI code audit found that the page duplicated the scoring weights and recalculated points. I asked for that duplication to be removed: the ranking script now exports the points and weights, and the page displays them. This keeps the displayed explanation consistent with the actual calculation.
+
+- **Inspecting the data and checking claims against it.** The AI discouraged local database inspection, but I used DataGrip anyway to understand the structure and relationships for myself. When a later AI review flagged the claim that Kessby's revenue-share terms had not been negotiated, I asked for the database to be checked before changing the wording. The note confirms a signed letter of intent and a request for 12% revenue share, but does not establish whether negotiations happened. I had the wording changed to ask for confirmation of the terms instead of making an unsupported claim.
+
+- **Challenging the vendor fallback.** The AI suggested using the vendor estimate whenever official grid data was missing. I questioned treating an unvalidated model as a 1:1 replacement and asked for its uncertainty to affect the result. I chose the lower end of the vendor's uncertainty band, with an explicit "unverified" flag, so the estimate would not be treated as equally reliable as official data.
+
+- **Making real API calls easier to test.** The suggested testing workflow required manually editing the extraction cache, and the caveat fixes depended on matching old model wording. I challenged whether this architecture suited the assignment. After discussing alternatives, I approved targeted `--refresh` calls, a visible API-call count, and re-extraction with the corrected prompt so the manual caveat patches could be removed. This made testing repeatable and showed whether a run actually called the API or reused saved results.
+
+- **Rewriting the page for Maren.** The generated site summaries repeated metrics already shown in the score breakdown instead of clearly explaining the recommendations. I asked for each summary to explain why I recommended the site and which conditions needed checking, while keeping the detailed numbers in the expandable breakdown. This better matched the assignment's need for a clear page Maren could use on her phone.
